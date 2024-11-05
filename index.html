@@ -2,10 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disney Princesses</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     
+    <header>
+        <h1 class="hidden">Meet the Disney Princesses!</h1>
+        <img src="images/disney_logo.png" alt="Disney Princesses Logo" id="main-logo">
+    </header>
+
+    <main>
+    <nav id="character_nav">
+        <h2 class="hidden">All The Princesses</h2>
+        <ul class="characters">
+            <li>
+                <a href="#lightbox">
+                    <h3 class="hidden">Rapunzel Lightbox</h3>
+                    <div class="sprite" id="rapunzel"></div>
+                    <h4>Rapunzel</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="#lightbox2">
+                    <h3 class="hidden">Snow White Lightbox</h3>
+                    <div class="sprite" id="snowwhite"></div>
+                    <h4>Snow White</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="#lightbox3">
+                    <h3 class="hidden">Ariel Lightbox</h3>
+                    <div class="sprite" id="ariel"></div>
+                    <h4>Ariel</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="#lightbox4">
+                    <h3 class="hidden">Belle Lightbox</h3>
+                    <div class="sprite" id="belle"></div>
+                    <h4>Belle</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="#lightbox5">
+                    <h3 class="hidden">Aurora Lightbox</h3>
+                    <div class="sprite" id="aurora"></div>
+                    <h4>Aurora</h4>
+                </a>
+            </li>
+
+            <li>
+                <a href="#lightbox6">
+                    <h3 class="hidden">Cinderella Lightbox</h3>
+                    <div class="sprite" id="cinderella"></div>
+                    <h4>Cinderella</h4>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+        <section id="instructions">
+            <h2> &#9829; Discover Your Princess &#9829;</h2>
+            <p><b>Hover over or click on each princess to learn more about their magical stories!</b></p>
+            <br>
+            <p><i>"Once upon a time, in realms shimmering with magic and dreams, there existed princesses who taught us the true meaning of courage, kindness, and love. Each princess, whether of royal blood or a humble heart, faced trials and adventures that shaped her destiny. From towers reaching the heavens to castles hidden in enchanted forests, they embarked on journeys filled with wonder, wisdom, and friendship. 
+                With bravery that conquers darkness and hearts that radiate light, they invite you to step into their stories. Each tale reveals strength, beauty, and grace that have made these princesses beloved legends across generations. As you explore this realm, hover over or click on each princess to discover the magic woven into their stories—their dreams, their friendships, and their pursuit of happily ever after.
+                In this enchanting world, you’ll find princesses who dared to dream, who stood up for what was right, and who showed that true royalty lies not in a crown but in a compassionate heart. So take a step forward, for your own ‘happily ever after’ awaits..."</i></p>
+        </section>
+
+    </main>
+
+    <footer class="sticky_footer">
+        <h3>All Images &copy; Disney</h3>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading">Rapunzel - The Lost Princess of the Tower</h3>
+            <p class="lb_text">Rapunzel is a symbol of curiosity and resilience, living isolated in a tower with her magical, healing hair and unaware of her royal origins. Despite her confinement, she fills her days with art, music, and dreams of adventure, holding on to hope and a deep desire to explore the world beyond her window. Her imagination and optimism fuel her spirit, keeping her resilient against loneliness.</p>
+            <p class="lb_text">When Rapunzel meets Flynn Rider, she bravely seizes the chance to leave her tower and chase her dreams. Along the way, she discovers her true identity as a princess and finds the strength to confront her past. Rapunzel’s journey teaches the value of courage, self-discovery, and following one’s dreams despite obstacles.</p>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox2">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading2">Snow White - The Fairest of Them All</h3>
+            <p class="lb_text">Snow White, the first Disney Princess, embodies innocence and kindness, even when faced with jealousy and danger from her wicked stepmother, the Evil Queen. Forced to flee into the forest, she finds a new life with the Seven Dwarfs, who cherish her gentle spirit and pure heart. Her kindness creates a bond with her new friends, bringing joy to their woodland home.</p>
+            <p class="lb_text">Despite the Queen’s cruel spell, Snow White’s goodness ultimately triumphs when true love’s kiss awakens her. Her story shows that innocence and optimism can overcome darkness, reminding us of the power of a kind heart.</p>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox3">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading3">Ariel - The Little Mermaid</h3>
+            <p class="lb_text">Ariel is a daring mermaid princess with an intense curiosity for the human world. Fascinated by life on land, she collects treasures and dreams of being part of that world, despite her father King Triton’s warnings. Ariel’s desire grows when she encounters Prince Eric, leading her to make a life-changing decision.</p>
+            <p class="lb_text">To be with Eric, Ariel trades her voice to the sea witch Ursula for human legs, embarking on a risky journey on land. Her story is a reminder of the importance of following one’s heart and staying true to oneself, even when it means facing challenges and sacrifices.</p>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox4">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading4">Belle - Beauty and the Beast</h3>
+            <p class="lb_text">Belle, a book-loving and kind-hearted young woman, longs for adventure beyond her village. When she bravely takes her father’s place as a prisoner in the Beast’s castle, she discovers the beauty within him despite his intimidating appearance. Her compassion allows her to see past the Beast’s exterior and find the goodness inside.</p>
+            <p class="lb_text">Their growing bond ultimately breaks the curse on the Beast and his castle. Belle’s story reminds us that true beauty lies within, showing the power of love, kindness, and empathy to change lives.</p>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox5">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading5">Aurora - Sleeping Beauty</h3>
+            <p class="lb_text">Aurora, blessed with beauty and grace, lives under the shadow of a curse cast by the wicked fairy Maleficent. Hidden in a forest by the good fairies to protect her, Aurora grows up unaware of her true identity, dreaming of love and a brighter future. She remains hopeful and gentle despite the danger that awaits.</p>
+            <p class="lb_text">When the curse finally takes effect, Aurora’s life is saved by true love’s kiss, proving that love can conquer even the darkest spells. Her story celebrates destiny, love, and the triumph of good over evil.</p>
+        </article>
+    </div>
+
+    <div class="lightbox" id="lightbox6">
+        <a href="index.html" class="lightbox_close">x</a>
+        <article>
+            <h3 class="lb_heading6">Cinderella - The Glass Slipper Princess</h3>
+            <p class="lb_text">Cinderella is a beacon of kindness and resilience, enduring mistreatment from her stepmother and stepsisters while holding onto her dreams. Her hope and gentle spirit lead her to a magical night at the ball, where she captures the heart of Prince Charming.</p>
+            <p class="lb_text">With the help of her Fairy Godmother, Cinderella transforms for the ball but must leave by midnight, leaving behind a single glass slipper. The Prince’s quest to find the owner of the slipper demonstrates that true love can overcome obstacles and that kindness and courage can lead to one’s dreams coming true.</p>
+        </article>
+    </div>
+
 </body>
 </html>
