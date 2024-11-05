@@ -1,0 +1,241 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Global Styles */
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: rgb(255, 240, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ff69b4;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.234);
+  }
+  
+  #main-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;  
+    transition: transform 0.3s ease;
+  }
+  
+  #main-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Navigation */
+  #character_nav {
+    background-color: #6c4848;
+    background-image: url('../images/magical_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  
+  .characters {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .characters li {
+    height: 220px;
+    margin: 10px 8px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 155px 0 rgb(255, 240, 245) inset;
+    transition: box-shadow .2s ease;
+    margin-top: 50px;
+    margin-right: 16px;
+  }
+  
+  .characters li a {
+    text-decoration: none;
+  }
+  
+  .characters li:hover {
+    box-shadow: 0 220px 0 rgb(255, 240, 245) inset;
+  }
+  
+  .characters li h4 {
+    color: #ff0080;
+    padding: 15px 5px;
+    font-size: medium;
+  }
+  
+  /* Section: Instructions & Articles */
+  article, #instructions {
+    background-color: rgb(255, 240, 245);
+    color: #ff69b4;
+    padding: 20px;
+  }
+  
+  article h3, #instructions h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  
+  article p, #instructions p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  /* Sprite Images */
+  .sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/princesses_sprites.png');
+  }
+  
+  #snowwhite { background-position: -150px 0; }
+  #ariel { background-position: -300px 0; }
+  #belle { background-position: -450px 0; }
+  #aurora { background-position: -600px 0; }
+  #cinderella { background-position: -750px 0; }
+  
+  #rapunzel:hover, #snowwhite:hover, #ariel:hover, #belle:hover, #aurora:hover, #cinderella:hover {
+    background-position-y: -150px;
+  }
+  
+  /* Footer */
+  footer {
+    color: rgb(255, 240, 245);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .sticky_footer {
+    height: 70px;
+    background-color: #ff69b4;
+    position: sticky;
+    top: 100%;
+  }
+  
+  /* Lightbox */
+  .lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 105vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    overflow-y: auto; 
+    padding: 2vh 5vw;
+    box-sizing: border-box;
+  }
+  
+  #lightbox {
+    background-image: url('../images/rapunzel.png');
+    background-repeat: no-repeat;
+    background-size: 24vw;
+    background-position: 8vw bottom;
+  }
+  
+  #lightbox2 {
+    background-image: url('../images/snowwhite.png');
+    background-repeat: no-repeat;
+    background-size: 32vw;
+    background-position: 5vw bottom;
+  }
+  
+  #lightbox3 {
+    background-image: url('../images/ariel.png');
+    background-repeat: no-repeat;
+    background-size: 34vw;
+    background-position: 3vw bottom;
+  }
+  
+  #lightbox4 {
+    background-image: url('../images/belle.png');
+    background-repeat: no-repeat;
+    background-size: 38vw;
+    background-position: 2vw bottom;
+  }
+  
+  #lightbox5 {
+    background-image: url('../images/aurora.png');
+    background-repeat: no-repeat;
+    background-size: 38vw;
+    background-position: 2vw bottom;
+  }
+  
+  #lightbox6 {
+    background-image: url('../images/cinderella.png');
+    background-repeat: no-repeat;
+    background-size: 39vw;
+    background-position: 5vw bottom;
+  }
+  
+  /* Lightbox Close Button */
+  .lightbox_close {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .lightbox_close:hover {
+    color: #ff69b4;
+  }
+  
+  /* Lightbox Content */
+  .lightbox article {
+    width: 60%;
+    max-width: 600px;
+    margin-top: 12%; 
+    margin-left: 40%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px 40px;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .lb_heading {
+    font-size: 2em;
+    color: #ec86ea;
+  }
+  
+  .lb_text {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-block-end: 1em;
+  }
+  
+  /* Lightbox Activation */
+  .lightbox:target, .lightbox#lightbox2:target, .lightbox#lightbox3:target, 
+  .lightbox#lightbox4:target, .lightbox#lightbox5:target, .lightbox#lightbox6:target {
+    display: block;
+  }
+  
+  /* Individual Lightbox Headings */
+  .lb_heading2 { color: #ff637d; }
+  .lb_heading3 { color: #6afccb; }
+  .lb_heading4 { color: #f7ea5a; }
+  .lb_heading5 { color: #fb60bd; }
+  .lb_heading6 { color: #4aacf7; }
